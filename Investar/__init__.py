@@ -1,1 +1,1 @@
-__all__ = ['DBUpdater', 'Analyzer']
+__all__ = ['DBUpdater', 'Analyzer', 'DataManager']
