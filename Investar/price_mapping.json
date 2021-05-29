@@ -1,0 +1,39 @@
+{
+
+  "settings" : {
+    "number_of_shards": 6,
+    "number_of_replicas": 1	
+  },
+  
+  "mappings": {
+   
+      "properties": {
+        "code": {
+          "type": "keyword"
+        },  
+        "date": {
+          "type": "date"
+        },
+		"open": {
+		  "type": "long"
+		},
+		"high": {
+		  "type": "long"
+		},
+		"low": {
+		  "type": "long"
+		},
+		"close": {
+		  "type": "long"
+		},
+		"diff": {
+		  "type": "long"
+		},
+		"volume": {
+		  "type": "long"
+		}
+      }
+
+	}
+
+}
