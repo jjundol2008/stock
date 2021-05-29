@@ -13,7 +13,7 @@ class ESManager:
         """생성자: ES 연결 및 종목코드 딕셔너리 생성 """
         print('init start')
 
-        self.es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200)
+        self.es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True)
 
         """ company_info index가 없을 경우 생성한다. """
         if self.es.indices.exists(index='company_info') == False:
@@ -306,11 +306,7 @@ if __name__ == '__main__':
 
 
     #http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13'
-
-    """ for key in self.codes:
-               print('key:',key , 'code:', self.codes[key] )
-               print('code:', result['_source']['code'], 'company:', result['_source']['company'], 'last_update:', result['_source']['last_update'])"""
     #update 참고 :https://nashorn.tistory.com/entry/Python%EC%9C%BC%EB%A1%9C-Elasticsearch-update-%EC%8B%A4%ED%96%89
     # https://stackoverflow.com/questions/54589940/detecting-termination-of-multiple-child-processes-with-multiprocessing
     # https://dailyheumsi.tistory.com/105
-    #
+    # Timeout https://somjang.tistory.com/entry/Elasticsearch-ConnectionTimeout-caused-by-ReadTimeoutError-feat-bulk-API-python
