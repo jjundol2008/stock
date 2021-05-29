@@ -21,9 +21,8 @@ def worker(sub_codes_list, pages_to_fetch, idx, result):
 
 if __name__ == '__main__':
     codes = dm.update_comp_info()
-    print(len(codes))
+
     pages_to_fetch = dm.getPageToFetch()
-    print(pages_to_fetch)
     sub_codes_list = dm.split_dict_equally(codes, 10)
     
     for idx in range(len(sub_codes_list)):
