@@ -6,6 +6,8 @@ from threading import Timer
 from elasticsearch import Elasticsearch
 from multiprocessing import Process, Pool
 import pkgutil
+from elasticsearch.helpers import bulk
+import os
 
 
 es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True)
@@ -26,7 +28,6 @@ class A():
             with open('comp_mapping.json', 'r') as f:
                 mapping = json.load(f)
             
-
             es.indices.create(index=index, body=mapping)
 
         else:
@@ -109,8 +110,9 @@ class A():
         print('')
 
     def update_daily_price(self, codes):
+        
         """KRX 상장법인의 주식 시세를 네이버로부터 읽어서 DB에 업데이트"""   
-        try:
+        """try:
             with open('config.json', 'r') as in_file:
                 config = json.load(in_file)
                 pages_to_fetch = config['pages_to_fetch']
@@ -120,12 +122,17 @@ class A():
                 config = {'pages_to_fetch': 1}
                 json.dump(config, out_file)
         print(f'pages_to_fetch[{pages_to_fetch}]')
-
+        """
+        
         for idx, code in enumerate(codes):
-            df = self.read_naver(code, codes[code], pages_to_fetch)
+            df = self.read_naver(code, codes[code], self.pages_to_fetch)
             if df is None:
                 continue
-            self.replace_into_index(df, idx, code, codes[code])
+            #self.replace_into_index(df, idx, code, codes[code])
+            #self.ies = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True)
+            #self.replace_into_index(df, idx, code, codes[code])
+            
+            self.replace_into_index(df, idx, code, codes[code],Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True))
             
     def read_naver(self, code, company, pages_to_fetch):
         """네이버에서 주식 시세를 읽어서 데이터프레임으로 반환 """
@@ -158,10 +165,25 @@ class A():
             print('Exception occured :', str(e))
             return None
         return df
-    def replace_into_index(self, df, num, code, company):
+    
+    def replace_into_index(self, df, num, code, company, ies):
         """네이버에서 읽어온 주식 시세를 DB에 REPLACE """
         index = 'daily_price'
 
+        df = pd.DataFrame(data = {'code': code,
+                                  'date': df['date'],
+                                  'close': df['close'],
+                                  'diff': df['diff'],
+                                  'high': df['high'],
+                                  'low':  df['low'],
+                                  'open': df['open'],
+                                  'volume': df['volume'],
+                                  '_id': code + '-' + df['date']})
+        documents = df.to_dict(orient='records')
+                                  
+        #print(documents)
+        bulk(ies, documents, index = index, doc_type='_doc', raise_on_error=True)
+        """
         for r in df.itertuples():
             doc = {
                 "code": code,
@@ -173,12 +195,12 @@ class A():
                 "open": r.open,
                 "volume": r.volume
             }
-            es.index(index=index, doc_type="_doc", id=code + '-' + r.date, body=doc)
+            ies.index(index=index, doc_type="_doc", id=code + '-' + r.date, body=doc)
 
         print('[{}] #{:04d} {} ({}) : {} rows > REPLACE INTO daily_'\
                 'price [OK]'.format(datetime.now().strftime('%Y-%m-%d'\
                 ' %H:%M'), num+1, company, code, len(df)))
-            
+        """    
 
     def split_codes_equally(self, chunks=10):
         "Splits dict by kes. Returna a list of dictionaries"
@@ -230,14 +252,72 @@ class A():
             pool.map(self.update_daily_price, sub_codes_list)
             pool.close()
             pool.join
+
+    def delete_index(self, index):
+        es.indices.delete(index=index, ignore=[400, 404])
+
+    def delete_config(self, file):
+        if os.path.isfile(file):
+            os.remove(file)
+        return 'okay'
+
+    def reset(self):
+        self.delete_index('daily_price')
+        self.delete_index('company_info')
+        self.delete_config('config.json')
+        self.codes = dict()
+
+        index='company_info'
+
+        with open('comp_mapping.json', 'r') as f:
+            mapping = json.load(f)
+            es.indices.create(index=index, body=mapping)
+        
+        index='daily_price'
+
+        with open('price_mapping.json', 'r') as f:
+            mapping = json.load(f)
+            es.indices.create(index=index, body=mapping)
+
+        self.pages_to_fetch = 100
+
+    def isFirst(self): 
+        try:
+            with open('config.json', 'r') as in_file:
+                return False
+        except FileNotFoundError:
+            with open('config.json', 'w') as out_file:
+                return True
+
+    def setPage(self, pages_to_fetch): 
+        with open('config.json', 'w') as out_file:
+            self.pages_to_fetch = pages_to_fetch
+            config = {'pages_to_fetch': pages_to_fetch}
+            json.dump(config, out_file)
+
+        
             
 if __name__ == '__main__':
-   
-
-    a = A(2)
-    codes = a.update_comp_info()
-    sub_codes_list = a.split_codes_equally(10)
-    print(f'sub_codes_list[{len(sub_codes_list)}]')
-    #a.run(list(range(10)))
-    a.run(sub_codes_list)
     
+    a = A(2)
+    a.reset()
+    if a.isFirst():    
+        a.reset()
+        codes = a.update_comp_info()
+        sub_codes_list = a.split_codes_equally(10)
+        args = []
+    
+        print(f'sub_codes_list[{len(sub_codes_list)}]')
+        #a.run(list(range(10)))
+        a.run(sub_codes_list)
+    else:
+        codes = a.update_comp_info()
+        sub_codes_list = a.split_codes_equally(10)
+        args = []
+    
+        print(f'sub_codes_list[{len(sub_codes_list)}]')
+        #a.run(list(range(10)))
+        a.run(sub_codes_list)
+        
+    a.setPage(1)
+        
