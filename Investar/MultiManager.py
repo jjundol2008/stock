@@ -318,6 +318,7 @@ if __name__ == '__main__':
         a.run(sub_codes_list)
     else:
         print('Not first trial')
+        a.setPage(1)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
         args = []
