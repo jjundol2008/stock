@@ -12,6 +12,7 @@ import time
 
 
 es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True)
+PATH = '/home/jjundol/dev/stock/Investar/'
 
 class A():
     def __init__(self, vl):
@@ -26,7 +27,7 @@ class A():
 
             #data = pkgutil.get_data(__name__, 'templates/comp_mapping.json')
             #mapping = json.loads(data.decode())
-            with open('comp_mapping.json', 'r') as f:
+            with open(PATH + 'comp_mapping.json', 'r') as f:
                 mapping = json.load(f)
             
             es.indices.create(index=index, body=mapping)
@@ -42,7 +43,7 @@ class A():
             #data = pkgutil.get_data(__name__, 'templates/price_mapping.json')
             #mapping = json.loads(data.decode())
 
-            with open('price_mapping.json', 'r') as f:
+            with open(PATH + 'price_mapping.json', 'r') as f:
                 mapping = json.load(f)
 
             es.indices.create(index=index, body=mapping)
@@ -272,13 +273,13 @@ class A():
 
         index='company_info'
 
-        with open('comp_mapping.json', 'r') as f:
+        with open(PATH + 'comp_mapping.json', 'r') as f:
             mapping = json.load(f)
             es.indices.create(index=index, body=mapping)
         
         index='daily_price'
 
-        with open('price_mapping.json', 'r') as f:
+        with open(PATH + 'price_mapping.json', 'r') as f:
             mapping = json.load(f)
             es.indices.create(index=index, body=mapping)
 
@@ -286,17 +287,16 @@ class A():
 
 
     def setPage(self, pages_to_fetch): 
-        with open('config.json', 'w') as out_file:
+        with open(PATH + 'config.json', 'w') as out_file:
             self.pages_to_fetch = pages_to_fetch
             config = {'pages_to_fetch': pages_to_fetch}
             json.dump(config, out_file)
 
 def isFirst(): 
     try:
-        with open('config.json', 'r') as in_file:
+        with open(PATH + 'config.json', 'r') as in_file:
             return False
     except FileNotFoundError:
-        with open('config.json', 'w') as out_file:
             return True
 
             
@@ -310,6 +310,7 @@ if __name__ == '__main__':
     a = A(2)
     if isFirst():
         print('first trial')
+        """ 
         a.reset(100)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
@@ -318,8 +319,11 @@ if __name__ == '__main__':
         print(f'sub_codes_list[{len(sub_codes_list)}]')
         #a.run(list(range(10)))
         a.run(sub_codes_list)
+	"""
+        
     else:
         print('Not first trial')
+        """ 
         a.setPage(1)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
@@ -328,7 +332,7 @@ if __name__ == '__main__':
         print(f'sub_codes_list[{len(sub_codes_list)}]')
         #a.run(list(range(10)))
         a.run(sub_codes_list)
-        
+        """ 
     a.setPage(1)
 
     elapsed_time = time.time() - start_time
