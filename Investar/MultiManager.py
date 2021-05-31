@@ -8,6 +8,7 @@ from multiprocessing import Process, Pool
 import pkgutil
 from elasticsearch.helpers import bulk
 import os
+import time
 
 
 es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200, timeout=30, max_retries=10, retry_on_timeout=True)
@@ -182,7 +183,8 @@ class A():
         documents = df.to_dict(orient='records')
                                   
         #print(documents)
-        bulk(ies, documents, index = index, doc_type='_doc', raise_on_error=True)
+        #bulk(ies, documents, index = index, doc_type='_doc', raise_on_error=True)
+        bulk(ies, documents, index = index, raise_on_error=True)
         """
         for r in df.itertuples():
             doc = {
@@ -262,6 +264,7 @@ class A():
         return 'okay'
 
     def reset(self):
+        print('reset')
         self.delete_index('daily_price')
         self.delete_index('company_info')
         self.delete_config('config.json')
@@ -299,9 +302,12 @@ class A():
             
 if __name__ == '__main__':
     
+    #시간 측정
+    start_time = time.time()
+    
     a = A(2)
-    a.reset()
-    if a.isFirst():    
+    if a.isFirst():
+        print('first trial')
         a.reset()
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
@@ -311,6 +317,7 @@ if __name__ == '__main__':
         #a.run(list(range(10)))
         a.run(sub_codes_list)
     else:
+        print('Not first trial')
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
         args = []
@@ -320,4 +327,8 @@ if __name__ == '__main__':
         a.run(sub_codes_list)
         
     a.setPage(1)
+
+    elapsed_time = time.time() - start_time
+    time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+    
         
