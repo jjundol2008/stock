@@ -310,7 +310,7 @@ if __name__ == '__main__':
     a = A(2)
     if isFirst():
         print('first trial')
-        """ 
+         
         a.reset(100)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
@@ -319,11 +319,11 @@ if __name__ == '__main__':
         print(f'sub_codes_list[{len(sub_codes_list)}]')
         #a.run(list(range(10)))
         a.run(sub_codes_list)
-	"""
+	
         
     else:
         print('Not first trial')
-        """ 
+         
         a.setPage(1)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
@@ -332,7 +332,7 @@ if __name__ == '__main__':
         print(f'sub_codes_list[{len(sub_codes_list)}]')
         #a.run(list(range(10)))
         a.run(sub_codes_list)
-        """ 
+         
     a.setPage(1)
 
     elapsed_time = time.time() - start_time
