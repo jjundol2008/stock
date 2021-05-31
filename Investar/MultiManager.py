@@ -263,7 +263,7 @@ class A():
             os.remove(file)
         return 'okay'
 
-    def reset(self):
+    def reset(self,pages_to_fetch):
         print('reset')
         self.delete_index('daily_price')
         self.delete_index('company_info')
@@ -282,15 +282,8 @@ class A():
             mapping = json.load(f)
             es.indices.create(index=index, body=mapping)
 
-        self.pages_to_fetch = 100
+        self.pages_to_fetch = pages_to_fetch
 
-    def isFirst(self): 
-        try:
-            with open('config.json', 'r') as in_file:
-                return False
-        except FileNotFoundError:
-            with open('config.json', 'w') as out_file:
-                return True
 
     def setPage(self, pages_to_fetch): 
         with open('config.json', 'w') as out_file:
@@ -298,17 +291,26 @@ class A():
             config = {'pages_to_fetch': pages_to_fetch}
             json.dump(config, out_file)
 
-        
+def isFirst(): 
+    try:
+        with open('config.json', 'r') as in_file:
+            return False
+    except FileNotFoundError:
+        with open('config.json', 'w') as out_file:
+            return True
+
             
 if __name__ == '__main__':
     
     #시간 측정
     start_time = time.time()
-    
+
+    # 처음 실행인 확인
+
     a = A(2)
-    if a.isFirst():
+    if isFirst():
         print('first trial')
-        a.reset()
+        a.reset(100)
         codes = a.update_comp_info()
         sub_codes_list = a.split_codes_equally(10)
         args = []
