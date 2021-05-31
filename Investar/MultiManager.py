@@ -330,6 +330,6 @@ if __name__ == '__main__':
     a.setPage(1)
 
     elapsed_time = time.time() - start_time
-    time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
-    
+    #time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+    print(f'elapsed time : [{time.strftime("%H:%M:%S", time.gmtime(elapsed_time))}]')
         
