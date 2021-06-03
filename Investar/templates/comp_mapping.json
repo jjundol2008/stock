@@ -11,14 +11,13 @@
         "code": {
           "type": "keyword"
         },
-		"comapny": {
-		  "type": "keyword"
-		},  
+        "company": {
+	  "type": "keyword"
+	},  
         "last_update": {
           "type": "date"
         }
       }
-
-	}
+  }
 
 }
