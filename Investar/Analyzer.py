@@ -124,7 +124,8 @@ class MarketDB:
         if len(list(df)) == 0 :
             raise Exception('No Data')
         else:
-            df.index = df['date']
+            #df.index = df['date']
+            df.index = pd.to_datetime(df['date'], format='%Y-%m-%d')
             df = df.sort_index()
            
         return df
