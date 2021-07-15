@@ -1,10 +1,15 @@
+import sys
+
 from Investar.dataLinker import *
 import  time
 from Investar.logger import *
 
 ################### For Setting ########
 
-PATH = 'C:\\dev\\python\\stock\\'
+PATHS = {'acer':'C:\\dev\\python\\stock\\', 'home_server':'/home/jjundol/dev/stock/', 'K8S':'asdfasdf' }
+
+#PATH = {}'C:\\dev\\python\\stock\\'
+PATH = PATHS['acer']
 logging = Logging()
 
 def isFirst():

@@ -6,3 +6,11 @@
 2021-07-15 16:08:43,040 | dataLinker.py | 129 | DEBUG -> inserting codes finished!!!
 2021-07-15 16:08:43,046 | DataCollector.py | 38 | DEBUG -> Not First Execution
 2021-07-15 16:09:15,152 | DataCollector.py | 44 | DEBUG -> elapsed time : [00:00:36]
+2021-07-15 16:48:14,545 | dataLinker.py | 32 | DEBUG -> ### es urls : ['jjundol.iptime.org']
+2021-07-15 16:48:14,545 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-15 16:48:14,546 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-15 16:48:14,599 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-15 16:48:14,612 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-15 16:48:14,888 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-15 16:48:14,888 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-15 16:48:14,889 | DataCollector.py | 43 | DEBUG -> Not First Execution
