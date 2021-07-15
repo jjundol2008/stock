@@ -6,8 +6,18 @@ from mpl_finance import candlestick_ohlc
 import matplotlib.dates as mdates
 from Investar import Analyzer
 
+# 한글 폰트 사용을 위해서 세팅
+from matplotlib import font_manager, rc
+font_path = "C:/Windows/Fonts/NGULIM.TTF"
+font = font_manager.FontProperties(fname=font_path).get_name()
+rc('font', family=font)
+
+#stock_name = 'SK이노베이션'
+stock_name = '삼성전자'
+#stock_name = '아이즈비전'
 mk = Analyzer.MarketDB()
-df = mk.get_daily_price('엔씨소프트', '2017-01-01')
+df = mk.get_daily_price(stock_name, '2020-06-27')
+#df = mk.get_daily_price(stock_name)
 
 ema60 = df.close.ewm(span=60).mean()
 ema130 = df.close.ewm(span=130).mean()
@@ -29,7 +39,8 @@ df = df.assign(fast_k=fast_k, slow_d=slow_d).dropna()
 
 plt.figure(figsize=(9, 9))
 p1 = plt.subplot(3, 1, 1)
-plt.title('Triple Screen Trading (NCSOFT)')
+title = f'{stock_name} Triple(20 day, 2 std)'
+plt.title(title)
 plt.grid(True)
 candlestick_ohlc(p1, ohlc.values, width=.6, colorup='red', colordown='blue')
 p1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
@@ -37,10 +48,12 @@ plt.plot(df.number, df['ema130'], color='c', label='EMA130')
 for i in range(1, len(df.close)):
     if df.ema130.values[i-1] < df.ema130.values[i] and \
         df.slow_d.values[i-1] >= 20 and df.slow_d.values[i] < 20:
-        plt.plot(df.number.values[i], 250000, 'r^') 
+        plt.plot(df.number.values[i], df.low.values[i], 'r^')
+        print('매수 : ',df.date.values[i])
     elif df.ema130.values[i-1] > df.ema130.values[i] and \
         df.slow_d.values[i-1] <= 80 and df.slow_d.values[i] > 80:
-        plt.plot(df.number.values[i], 250000, 'bv') 
+        plt.plot(df.number.values[i], df.low.values[i], 'bv')
+        print('매도 : ', df.date.values[i])
 plt.legend(loc='best')
 
 p2 = plt.subplot(3, 1, 2)

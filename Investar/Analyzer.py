@@ -11,7 +11,8 @@ class MarketDB:
         """생성자: ES 연결 및 종목코드 딕셔너리 생성 """
         print('init start')
 
-        self.es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200)
+        #self.es = Elasticsearch(['192.168.0.13','192.168.0.14','192.168.0.15'], port=9200)
+        self.es = Elasticsearch(['192.168.0.38', '192.168.0.39'], port=30245)
         
         self.codes = {}
         self.get_comp_info()
@@ -22,7 +23,7 @@ class MarketDB:
         
     def get_comp_info(self):
         """company_info index에서 읽어와서 codes에 저장"""
-        index = 'company_info'
+        index = 'company_info_01'
         body = {
           "query": {
             "match_all": {}
@@ -45,7 +46,7 @@ class MarketDB:
         if start_date is None:
             one_year_ago = datetime.today() - timedelta(days=365)
             start_date = one_year_ago.strftime('%Y-%m-%d')
-            print("start_date is initialized to '{}'".format(start_date))
+            #print("start_date is initialized to '{}'".format(start_date))
         else:
             start_lst = re.split('\D+', start_date)
             if start_lst[0] == '':
@@ -66,7 +67,7 @@ class MarketDB:
 
         if end_date is None:
             end_date = datetime.today().strftime('%Y-%m-%d')
-            print("end_date is initialized to '{}'".format(end_date))
+            #print("end_date is initialized to '{}'".format(end_date))
         else:
             end_lst = re.split('\D+', end_date)
             if end_lst[0] == '':
@@ -96,7 +97,7 @@ class MarketDB:
         else:
             print(f"ValueError: Code({code}) doesn't exist.")
 
-        index = 'daily_price'
+        index = 'daily_price_01'
         
         body = {
             "query": {
@@ -117,12 +118,14 @@ class MarketDB:
                 }
             }
         }
+
+        print(body)
         
         results = elasticsearch.helpers.scan(self.es, query=body, scroll='10m', size=10000, index=index)
         df = pd.DataFrame.from_dict([document['_source'] for document in results])
 
         if len(list(df)) == 0 :
-            raise Exception('No Data')
+            raise Exception(f'No Data : {code} { self.codes[code]}')
         else:
             #df.index = df['date']
             df.index = pd.to_datetime(df['date'], format='%Y-%m-%d')

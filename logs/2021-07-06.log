@@ -1,0 +1,58 @@
+2021-07-06 17:29:33,017 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 17:29:33,018 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 17:29:33,019 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 17:29:33,306 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 17:29:33,746 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 17:54:35,768 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 17:54:35,768 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 17:54:35,780 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 17:55:05,802 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 17:55:05,809 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:19:43,167 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:19:43,168 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:19:43,169 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:19:43,316 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:19:43,336 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:20:30,499 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:20:30,499 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:20:30,500 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:20:30,523 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:20:30,559 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:21:33,638 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:21:33,639 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:21:33,639 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:21:33,669 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:21:33,677 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:21:58,620 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:21:58,620 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:21:58,621 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:21:58,636 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:21:58,653 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:24:59,978 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:24:59,978 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:24:59,978 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:24:59,995 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:25:00,013 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:27:14,479 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:27:14,479 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:27:14,480 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:27:14,499 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:27:14,516 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:30:53,984 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:30:53,984 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:30:53,985 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:30:54,002 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:30:54,021 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:31:59,438 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:31:59,439 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:31:59,439 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:31:59,445 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:31:59,452 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:32:41,934 | dataLinker.py | 28 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-06 18:32:41,934 | dataLinker.py | 29 | DEBUG -> ### company index name : company_info_01
+2021-07-06 18:32:41,935 | dataLinker.py | 30 | DEBUG -> ### price index name : daily_price_01
+2021-07-06 18:32:41,957 | dataLinker.py | 41 | DEBUG -> company_info exists 
+2021-07-06 18:32:41,973 | dataLinker.py | 51 | DEBUG -> daily_price exists 
+2021-07-06 18:32:44,599 | dataLinker.py | 125 | DEBUG -> inserting codes finished!!!
+2021-07-06 18:32:44,607 | DataCollector.py | 37 | DEBUG -> Not First Execution
+2021-07-06 18:33:24,203 | DataCollector.py | 43 | DEBUG -> elapsed time : [00:00:42]

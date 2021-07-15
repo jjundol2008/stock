@@ -1,0 +1,25 @@
+2021-07-14 16:18:17,111 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.38', '192.168.0.39']
+2021-07-14 16:18:17,113 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-14 16:18:17,114 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-14 16:18:17,375 | dataLinker.py | 45 | DEBUG -> company_info exists 
+2021-07-14 16:18:17,401 | dataLinker.py | 55 | DEBUG -> daily_price exists 
+2021-07-14 16:18:26,426 | dataLinker.py | 129 | DEBUG -> inserting codes finished!!!
+2021-07-14 16:18:26,435 | DataCollector.py | 38 | DEBUG -> Not First Execution
+2021-07-14 16:19:31,885 | DataCollector.py | 44 | DEBUG -> elapsed time : [00:01:14]
+2021-07-14 18:05:34,609 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.14', '192.168.0.14', '192.168.0.15']
+2021-07-14 18:05:34,609 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-14 18:05:34,610 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-14 18:05:34,683 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-14 18:05:34,795 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-14 18:05:38,287 | dataLinker.py | 129 | DEBUG -> inserting codes finished!!!
+2021-07-14 18:05:38,289 | DataCollector.py | 38 | DEBUG -> Not First Execution
+2021-07-14 18:06:27,875 | DataCollector.py | 44 | DEBUG -> elapsed time : [00:00:53]
+2021-07-14 21:33:48,481 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.16', '192.168.0.14', '192.168.0.15']
+2021-07-14 21:33:48,482 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-14 21:33:48,482 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-14 21:33:48,552 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-14 21:33:48,611 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-14 21:33:48,935 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-14 21:33:48,937 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-14 21:33:48,938 | DataCollector.py | 38 | DEBUG -> Not First Execution
+2021-07-14 21:34:45,915 | DataCollector.py | 44 | DEBUG -> elapsed time : [00:00:57]

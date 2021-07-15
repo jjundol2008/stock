@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 from Investar import Analyzer
 
 mk = Analyzer.MarketDB()
-stocks = ['삼성전자', 'SK하이닉스', '현대자동차', 'NAVER']
+stocks = ['삼성전자', 'SK하이닉스', 'SK이노베이션', '셀트리온']
 df = pd.DataFrame()
 for s in stocks:
-    df[s] = mk.get_daily_price(s, '2016-01-04', '2018-04-27')['close']
+    df[s] = mk.get_daily_price(s, '2016-01-04', '2021-06-08')['close']
   
 daily_ret = df.pct_change() 
 annual_ret = daily_ret.mean() * 252
@@ -39,8 +39,9 @@ df = pd.DataFrame(portfolio)
 df = df[['Returns', 'Risk', 'Sharpe'] + [s for s in stocks]]  # ② 
     
 max_sharpe = df.loc[df['Sharpe'] == df['Sharpe'].max()]  # ③
+print('Max Sharp :' , max_sharpe)
 min_risk = df.loc[df['Risk'] == df['Risk'].min()]  # ④
-
+print('Min Risk :', min_risk)
 df.plot.scatter(x='Risk', y='Returns', c='Sharpe', cmap='viridis',
     edgecolors='k', figsize=(11,7), grid=True)  # ⑤
 plt.scatter(x=max_sharpe['Risk'], y=max_sharpe['Returns'], c='r', 

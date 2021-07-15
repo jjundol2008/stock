@@ -1,0 +1,310 @@
+2021-07-04 21:51:15,225 | dataLinker.py | 19 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:51:15,226 | dataLinker.py | 20 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:51:15,226 | dataLinker.py | 21 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:51:15,272 | dataLinker.py | 31 | DEBUG -> company_info exists 
+2021-07-04 21:51:15,304 | dataLinker.py | 35 | DEBUG -> create daily_price index
+2021-07-04 21:52:14,263 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:52:14,263 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:52:14,274 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:52:14,289 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 21:52:14,347 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 21:53:19,023 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:53:19,023 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:53:19,023 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:53:19,060 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 21:53:19,093 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 21:58:21,225 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:58:21,226 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:58:21,226 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:58:21,251 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 21:58:21,285 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 21:58:38,303 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:58:38,303 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:58:38,303 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:58:38,331 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 21:58:38,359 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 21:59:11,475 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 21:59:11,475 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 21:59:11,475 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 21:59:11,522 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 21:59:11,549 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 22:00:52,177 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:00:52,177 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:00:52,177 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:00:52,214 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 22:00:52,283 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 22:00:52,581 | dataLinker.py | 112 | DEBUG -> max_date is not None
+2021-07-04 22:00:52,581 | dataLinker.py | 117 | DEBUG -> inserting codes finished!!!
+2021-07-04 22:04:18,198 | dataLinker.py | 21 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:04:18,198 | dataLinker.py | 22 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:04:18,198 | dataLinker.py | 23 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:04:18,226 | dataLinker.py | 33 | DEBUG -> company_info exists 
+2021-07-04 22:04:18,295 | dataLinker.py | 43 | DEBUG -> daily_price exists 
+2021-07-04 22:04:18,563 | dataLinker.py | 114 | DEBUG -> max_date is not None
+2021-07-04 22:04:18,563 | dataLinker.py | 117 | DEBUG -> max_date is not less than today
+2021-07-04 22:55:25,950 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:55:25,950 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:55:25,950 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:55:25,979 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 22:55:26,004 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 22:55:26,281 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 22:55:26,282 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 22:57:05,756 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:57:05,756 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:57:05,756 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:57:05,802 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 22:57:05,837 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 22:57:06,094 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 22:57:06,094 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 22:58:35,272 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:58:35,272 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:58:35,272 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:58:35,297 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 22:58:35,326 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 22:58:35,560 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 22:58:35,561 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 22:59:19,319 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:59:19,319 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:59:19,319 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:59:19,341 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 22:59:19,396 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 22:59:19,633 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 22:59:19,634 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 22:59:44,437 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 22:59:44,437 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 22:59:44,438 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 22:59:44,473 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 22:59:44,486 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 22:59:44,671 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 22:59:44,671 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:00:09,449 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:00:09,449 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:00:09,449 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:00:09,464 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:00:09,484 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:00:09,596 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:00:09,597 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:02:55,682 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:02:55,682 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:02:55,682 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:02:55,765 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:02:55,837 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:02:56,218 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:02:56,218 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:03:15,396 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:03:15,397 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:03:15,397 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:03:15,425 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:03:15,443 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:03:15,752 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:03:15,752 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:04:20,147 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:04:20,147 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:04:20,147 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:04:20,250 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:04:20,288 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:04:20,618 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:04:20,619 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:05:12,976 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:05:12,976 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:05:12,976 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:05:13,018 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:05:13,052 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:05:13,328 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:05:13,329 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:06:46,264 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:06:46,265 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:06:46,265 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:06:46,304 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:06:46,340 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:06:46,655 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:06:46,655 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:07:16,923 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:07:16,924 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:07:16,924 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:07:16,976 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:07:17,027 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:07:17,333 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:07:17,333 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:07:31,396 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:07:31,396 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:07:31,396 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:07:31,425 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:07:31,463 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:07:31,754 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:07:31,755 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:13:28,644 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:13:28,644 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:13:28,644 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:13:28,663 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:13:28,693 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:13:28,844 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:13:28,844 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:13:46,787 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:13:46,787 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:13:46,787 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:13:46,839 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:13:46,913 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:13:47,287 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:13:47,287 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:14:06,805 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:14:06,805 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:14:06,805 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:14:06,866 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:14:06,909 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:14:07,244 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:14:07,244 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:14:30,065 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:14:30,065 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:14:30,065 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:14:30,200 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:14:30,313 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:14:30,791 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:14:30,792 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:15:36,648 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:15:36,648 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:15:36,648 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:15:36,697 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:15:36,726 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:15:36,959 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:15:36,959 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:16:03,424 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:16:03,424 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:16:03,424 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:16:03,526 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:16:03,575 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:16:03,847 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:16:03,848 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:16:50,383 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:16:50,383 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:16:50,383 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:16:50,401 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:16:50,425 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:16:50,630 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:16:50,630 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:17:22,605 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:17:22,605 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:17:22,605 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:17:22,660 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:17:22,681 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:17:22,906 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:17:22,906 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:18:13,951 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:18:13,951 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:18:13,951 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:18:13,976 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:18:14,012 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:18:14,267 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:18:14,267 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:19:11,377 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:19:11,377 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:19:11,377 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:19:11,458 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:19:11,527 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:19:11,944 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:19:11,944 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:20:24,748 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:20:24,749 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:20:24,749 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:20:24,774 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:20:24,814 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:20:25,061 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:20:25,061 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:28:41,651 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:28:41,652 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:28:41,652 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:28:41,731 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:28:41,801 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:28:42,155 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:28:42,155 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:29:00,315 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:29:00,315 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:29:00,315 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:29:00,389 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:29:00,416 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:29:00,645 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:29:00,646 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:31:48,127 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:31:48,127 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:31:48,127 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:31:48,165 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:31:48,212 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:31:48,468 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:31:48,468 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:32:12,018 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:32:12,018 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:32:12,018 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:32:12,053 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:32:12,089 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:32:12,361 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:32:12,362 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:32:58,147 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:32:58,147 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:32:58,147 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:32:58,165 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:32:58,188 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:32:58,445 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:32:58,445 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:37:46,759 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:37:46,760 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:37:46,760 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:37:46,789 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:37:46,827 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:37:47,099 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:37:47,099 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:38:35,067 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:38:35,067 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:38:35,067 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:38:35,102 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:38:35,140 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:38:35,378 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:38:35,378 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:40:12,744 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:40:12,744 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:40:12,744 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:40:12,828 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:40:12,865 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:40:13,121 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:40:13,122 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:40:45,992 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:40:45,992 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:40:45,992 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:40:46,026 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:40:46,042 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:40:46,380 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:40:46,380 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:46:46,485 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:46:46,485 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:46:46,485 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:46:46,578 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:46:46,654 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:46:47,026 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:46:47,026 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:48:57,203 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:48:57,203 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:48:57,203 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:48:57,281 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:48:57,410 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:48:57,820 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:48:57,820 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:50:33,798 | dataLinker.py | 25 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:50:33,799 | dataLinker.py | 26 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:50:33,799 | dataLinker.py | 27 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:50:33,816 | dataLinker.py | 37 | DEBUG -> company_info exists 
+2021-07-04 23:50:33,830 | dataLinker.py | 47 | DEBUG -> daily_price exists 
+2021-07-04 23:50:33,932 | dataLinker.py | 120 | DEBUG -> max_date is not None
+2021-07-04 23:50:33,932 | dataLinker.py | 123 | DEBUG -> max_date is not less than today
+2021-07-04 23:54:26,156 | dataLinker.py | 26 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:54:26,157 | dataLinker.py | 27 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:54:26,157 | dataLinker.py | 28 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:54:26,228 | dataLinker.py | 38 | DEBUG -> company_info exists 
+2021-07-04 23:54:26,313 | dataLinker.py | 48 | DEBUG -> daily_price exists 
+2021-07-04 23:54:26,611 | dataLinker.py | 121 | DEBUG -> max_date is not None
+2021-07-04 23:54:26,611 | dataLinker.py | 124 | DEBUG -> max_date is not less than today
+2021-07-04 23:56:09,740 | dataLinker.py | 26 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-04 23:56:09,740 | dataLinker.py | 27 | DEBUG -> ### company index name : company_info_01
+2021-07-04 23:56:09,740 | dataLinker.py | 28 | DEBUG -> ### price index name : daily_price_01
+2021-07-04 23:56:09,782 | dataLinker.py | 38 | DEBUG -> company_info exists 
+2021-07-04 23:56:09,840 | dataLinker.py | 48 | DEBUG -> daily_price exists 
+2021-07-04 23:56:10,199 | dataLinker.py | 121 | DEBUG -> max_date is not None
+2021-07-04 23:56:10,200 | dataLinker.py | 124 | DEBUG -> max_date is not less than today

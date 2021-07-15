@@ -1,0 +1,12 @@
+2021-07-03 01:37:48,295 | dataLinker.py | 18 | DEBUG -> create company_info index
+2021-07-03 01:37:48,295 | dataLinker.py | 22 | DEBUG -> {'settings': {'number_of_shards': 6, 'number_of_replicas': 1}, 'mappings': {'properties': {'code': {'type': 'keyword'}, 'company': {'type': 'keyword'}, 'last_update': {'type': 'date'}}}}
+2021-07-03 01:41:28,226 | dataLinker.py | 18 | DEBUG -> create company_info index
+2021-07-03 01:41:28,227 | dataLinker.py | 22 | DEBUG -> {'settings': {'number_of_shards': 6, 'number_of_replicas': 1}, 'mappings': {'properties': {'code': {'type': 'keyword'}, 'company': {'type': 'keyword'}, 'last_update': {'type': 'date'}}}}
+2021-07-03 01:42:25,597 | dataLinker.py | 18 | DEBUG -> create company_info index
+2021-07-03 01:43:47,835 | dataLinker.py | 18 | DEBUG -> create company_info index
+2021-07-03 01:44:22,338 | dataLinker.py | 25 | DEBUG -> company_info exists 
+2021-07-03 01:49:49,829 | dataLinker.py | 26 | DEBUG -> company_info exists 
+2021-07-03 01:52:43,227 | dataLinker.py | 18 | DEBUG -> ### es urls : ['192.168.0.13', '192.168.0.14', '192.168.0.15']
+2021-07-03 01:52:43,228 | dataLinker.py | 19 | DEBUG -> ### company index name : company_info_01
+2021-07-03 01:52:43,228 | dataLinker.py | 20 | DEBUG -> ### price index name : daily_price_01
+2021-07-03 01:52:43,245 | dataLinker.py | 31 | DEBUG -> company_info exists 
