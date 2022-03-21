@@ -10,7 +10,8 @@ class HostInfo(object):
 '''
 def getESHost(gubun):
     host_dict={
-        'internal': ['192.168.0.16','192.168.0.14','192.168.0.15'],
+        'internal': ['192.168.0.16','192.168.0.14','192.168.0.15','192.168.0.18','192.168.0.17'],
+        #'internal': ['192.168.0.18','192.168.0.17'],
 
         'external': ['jjundol.iptime.org'],
 

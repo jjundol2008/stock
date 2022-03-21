@@ -5,3 +5,4 @@
 2021-08-06 13:47:50,410 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
 2021-08-06 13:47:52,615 | dataLinker.py | 133 | DEBUG -> inserting codes finished!!!
 2021-08-06 13:47:52,621 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-08-06 13:48:42,078 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:51]

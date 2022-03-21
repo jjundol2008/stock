@@ -6,3 +6,12 @@
 2021-08-09 08:10:37,508 | dataLinker.py | 133 | DEBUG -> inserting codes finished!!!
 2021-08-09 08:10:37,513 | DataCollector.py | 43 | DEBUG -> Not First Execution
 2021-08-09 08:11:25,221 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:50]
+2021-08-09 20:18:09,902 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.38', '192.168.0.39']
+2021-08-09 20:18:09,903 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-08-09 20:18:09,903 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-08-09 20:18:09,906 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-08-09 20:18:09,920 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-08-09 20:18:09,999 | dataLinker.py | 137 | DEBUG -> max_date is not None
+2021-08-09 20:18:09,999 | dataLinker.py | 140 | DEBUG -> max_date is not less than today
+2021-08-09 20:18:10,000 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-08-09 20:20:43,730 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:02:33]

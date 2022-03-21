@@ -23,8 +23,8 @@ class DataLinKer():
         self.port = getESPort(hostGubun)
 
         global es
-        print(self.esurls)
-        print(self.port)
+        #print(self.esurls)
+        #print(self.port)
         es = Elasticsearch(self.esurls, port=self.port, timeout=30, max_retries=10, retry_on_timeout=True)
         self.company_index_name = getIndexName('company_index_name')  # 회사정보를 저장할 index의 이름을 가져온다.
         self.price_index_name = getIndexName('price_index_name') # daily price를 저장한 index의 이름을 가져온다.
@@ -94,23 +94,26 @@ class DataLinKer():
         #today  = (datetime.today() + timedelta(days=1)).strftime('%Y-%m-%d')
         results = es.search(index=self.company_index_name, body=body)
 
-        print(body)
+        #print(body)
         if results['aggregations']['max_date']['value'] == None or results['aggregations']['max_date'][
             'value_as_string'] < today:
-            krx = self.read_krx_code()
+            #krx = self.read_krx_code()
+            krx = self.read_krx_code_api()
 
             # print(krx)
             company_codes = []
             company_names = []
+            market_codes = []
 
 
             for idx in range(len(krx)):
                 company_codes.append(krx.code.values[idx])
                 company_names.append(krx.company.values[idx])
+                market_codes.append(krx.market_code.values[idx])
                 self.codes[krx.code.values[idx]] = krx.company.values[idx]
 
 
-            df = pd.DataFrame([ x for x in zip(company_codes, company_names)], columns=['code','company'])
+            df = pd.DataFrame([ x for x in zip(company_codes, company_names, market_codes)], columns=['code','company','market_code'])
             doc = [
                 {
                     "_index": self.company_index_name,
@@ -118,10 +121,11 @@ class DataLinKer():
                     "_source": {
                         "code":x[0],
                         "company":x[1],
+                        "market_code":x[2],
                         "last_update": today
                     }
                 }
-                for x in zip(df['code'], df['company'])
+                for x in zip(df['code'], df['company'], df['market_code'])
             ]
 
             helpers.bulk(es, doc)
@@ -136,16 +140,40 @@ class DataLinKer():
                 self.logging.logger.debug('max_date is not less than today')
 
 
-    def read_krx_code(self):
-        """KRX로 부터 상장법인 목록 파일을 읽어와서 데이터프레임으로 변환"""
-        url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method='\
-              'download&searchType=13'
-        krx = pd.read_html(url, header=0)[0]
-        krx = krx[['종목코드', '회사명']]
-        krx = krx.rename(columns={'종목코드':'code','회사명':'company'})
-        krx.code = krx.code.map('{:06d}'.format)
-        #print(krx)
+    def read_krx_code_api(self):
+        """ KRX로 부터 상장 법인 목록 API를 읽어와서 데이터 프레임으로 변환 , KOSPI, KOSDAQ 구분까지 입력"""
+        url_market = 'stockMkt'
+        # https://lifeonroom.com/study-lab/get-stock-code-price/ 참고 URL
+        url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13&marketType=%s' % url_market
+        krx_kospi = pd.read_html(url, header=0)[0]
+        krx_kospi = krx_kospi[['종목코드', '회사명']]
+        krx_kospi = krx_kospi.rename(columns={'종목코드': 'code', '회사명': 'company'})
+        krx_kospi.code = krx_kospi.code.map('{:06d}'.format)
+        krx_kospi['market_code'] = 'KOSPI'
+
+        url_market = 'kosdaqMkt'
+        url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13&marketType=%s' % url_market
+        krx_kosdaq = pd.read_html(url, header=0)[0]
+        krx_kosdaq = krx_kosdaq[['종목코드', '회사명']]
+        krx_kosdaq = krx_kosdaq.rename(columns={'종목코드': 'code', '회사명': 'company'})
+        krx_kosdaq.code = krx_kosdaq.code.map('{:06d}'.format)
+        krx_kosdaq['market_code'] = 'KOSDAQ'
+
+        krx = pd.concat([krx_kospi, krx_kosdaq])
+
         return krx
+
+    #### 구메소드
+    # def read_krx_code(self):
+    #     """KRX로 부터 상장법인 목록 파일을 읽어와서 데이터프레임으로 변환"""
+    #     url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method='\
+    #           'download&searchType=13'
+    #     krx = pd.read_html(url, header=0)[0]
+    #     krx = krx[['종목코드', '회사명']]
+    #     krx = krx.rename(columns={'종목코드':'code','회사명':'company'})
+    #     krx.code = krx.code.map('{:06d}'.format)
+    #     #print(krx)
+    #     return krx
 
     #def update_daily_price(self, codes):
     def update_daily_price(self, codes, pages_to_fetch):

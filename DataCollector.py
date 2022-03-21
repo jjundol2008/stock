@@ -30,11 +30,11 @@ if __name__ == '__main__':
     start_time = time.time()
 
     #dl = DataLinKer('internal')
-    dl = DataLinKer('external')
-    #dl = DataLinKer('k8s')
+    #dl = DataLinKer('external')
+    dl = DataLinKer('k8s')
     dl.update_comp_info()
 
-        #dl.setPagesToFetch(1)
+    #dl.setPagesToFetch(1)
     if isFirst():
         logging.logger.debug('First Execution')
         dl.run(10, 1200) # 10개로 돌린다. 1200일치 데이터 가지고 온다.

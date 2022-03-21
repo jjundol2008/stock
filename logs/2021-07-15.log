@@ -14,3 +14,4 @@
 2021-07-15 16:48:14,888 | dataLinker.py | 133 | DEBUG -> max_date is not None
 2021-07-15 16:48:14,888 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
 2021-07-15 16:48:14,889 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-07-15 16:48:47,025 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:32]

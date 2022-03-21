@@ -3,3 +3,6 @@
 2021-08-02 21:49:08,352 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
 2021-08-02 21:49:08,358 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
 2021-08-02 21:49:08,372 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-08-02 21:49:14,049 | dataLinker.py | 133 | DEBUG -> inserting codes finished!!!
+2021-08-02 21:49:14,061 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-08-02 21:51:50,199 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:02:41]

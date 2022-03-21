@@ -6,3 +6,31 @@
 2021-07-16 00:28:40,817 | dataLinker.py | 133 | DEBUG -> max_date is not None
 2021-07-16 00:28:40,818 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
 2021-07-16 00:28:40,824 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-07-16 00:29:34,130 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:53]
+2021-07-16 00:33:00,352 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.18', '192.168.0.17']
+2021-07-16 00:33:00,353 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-16 00:33:00,353 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-16 00:33:00,372 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-16 00:33:00,447 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-16 00:33:00,852 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-16 00:33:00,853 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-16 00:33:00,854 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-07-16 00:34:03,603 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:01:03]
+2021-07-16 00:51:42,446 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.16', '192.168.0.14', '192.168.0.15', '192.168.0.18', '192.168.0.17']
+2021-07-16 00:51:42,447 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-16 00:51:42,447 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-16 00:51:42,513 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-16 00:51:42,562 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-16 00:51:43,298 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-16 00:51:43,298 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-16 00:51:43,300 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-07-16 00:52:41,773 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:59]
+2021-07-16 00:54:39,054 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.16', '192.168.0.14', '192.168.0.15', '192.168.0.18', '192.168.0.17']
+2021-07-16 00:54:39,054 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-16 00:54:39,055 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-16 00:54:39,098 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-16 00:54:39,119 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-16 00:54:39,466 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-16 00:54:39,466 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-16 00:54:39,467 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-07-16 00:56:02,504 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:01:23]

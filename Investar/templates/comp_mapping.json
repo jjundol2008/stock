@@ -12,8 +12,11 @@
           "type": "keyword"
         },
         "company": {
-	  "type": "keyword"
-	},  
+	      "type": "keyword"
+	    },
+        "market_code": {
+          "type": "keyword"
+        },
         "last_update": {
           "type": "date"
         }
