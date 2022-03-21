@@ -1,0 +1,5 @@
+2021-08-04 22:33:48,124 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.38', '192.168.0.39']
+2021-08-04 22:33:48,126 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-08-04 22:33:48,127 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-08-04 22:33:48,140 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-08-04 22:33:48,159 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 

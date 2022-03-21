@@ -1,0 +1,7 @@
+2021-07-20 17:59:08,349 | dataLinker.py | 32 | DEBUG -> ### es urls : ['jjundol.iptime.org']
+2021-07-20 17:59:08,350 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-20 17:59:08,350 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-20 17:59:08,397 | dataLinker.py | 39 | DEBUG -> create company_info index
+2021-07-20 17:59:08,610 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-20 17:59:11,034 | dataLinker.py | 133 | DEBUG -> inserting codes finished!!!
+2021-07-20 17:59:11,040 | DataCollector.py | 43 | DEBUG -> Not First Execution

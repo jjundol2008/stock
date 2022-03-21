@@ -1,0 +1,3 @@
+2021-11-01 08:10:35,078 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.38', '192.168.0.39']
+2021-11-01 08:10:35,079 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-11-01 08:10:35,079 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01

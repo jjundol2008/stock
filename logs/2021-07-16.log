@@ -1,0 +1,8 @@
+2021-07-16 00:28:40,432 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.18', '192.168.0.17']
+2021-07-16 00:28:40,433 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-07-16 00:28:40,433 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-07-16 00:28:40,482 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-07-16 00:28:40,543 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-07-16 00:28:40,817 | dataLinker.py | 133 | DEBUG -> max_date is not None
+2021-07-16 00:28:40,818 | dataLinker.py | 136 | DEBUG -> max_date is not less than today
+2021-07-16 00:28:40,824 | DataCollector.py | 43 | DEBUG -> Not First Execution

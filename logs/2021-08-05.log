@@ -1,0 +1,8 @@
+2021-08-05 08:10:33,239 | dataLinker.py | 32 | DEBUG -> ### es urls : ['192.168.0.38', '192.168.0.39']
+2021-08-05 08:10:33,239 | dataLinker.py | 33 | DEBUG -> ### company index name : company_info_01
+2021-08-05 08:10:33,240 | dataLinker.py | 34 | DEBUG -> ### price index name : daily_price_01
+2021-08-05 08:10:33,255 | dataLinker.py | 45 | DEBUG -> index for company_info exists 
+2021-08-05 08:10:33,267 | dataLinker.py | 55 | DEBUG -> index for daily_price exists 
+2021-08-05 08:10:35,294 | dataLinker.py | 133 | DEBUG -> inserting codes finished!!!
+2021-08-05 08:10:35,295 | DataCollector.py | 43 | DEBUG -> Not First Execution
+2021-08-05 08:11:24,669 | DataCollector.py | 49 | DEBUG -> elapsed time : [00:00:51]
